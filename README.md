@@ -4,7 +4,7 @@ Recuerden que para subir una edición del codigo deben hacer lo siguiente:
 
 Paso 1:
 
-En la rama "Master" (Al lado del proyecto" vamos a darle a "Commit and Push" para desplegar el menu
+En la rama "Master" (Al lado del proyecto) vamos a darle a "Commit" para desplegar el menu
 
 ![image](https://github.com/dsavilam/proyectoDos/assets/151478778/746e6ca4-6098-4956-b736-5550727bd545)
 
