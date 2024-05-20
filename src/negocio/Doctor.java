@@ -1,11 +1,11 @@
-package bClases;
+package negocio;
 
 public class Doctor extends Persona{
     private String especialidad;
     private String noMatricula;
 
-    public Doctor(Long id, String nombre, String apellido, String noIdentificacion, String especialidad, String noMatricula) {
-        super(id, nombre, apellido, noIdentificacion);
+    public Doctor(Long id, String nombre, String apellido, String noIdentificacion, TipoIdentificacion tipoIdentificacion, String especialidad, String noMatricula) {
+        super(id, nombre, apellido, noIdentificacion, tipoIdentificacion);
         this.especialidad = especialidad;
         this.noMatricula = noMatricula;
     }

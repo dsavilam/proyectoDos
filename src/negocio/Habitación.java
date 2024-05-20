@@ -1,4 +1,7 @@
-package bClases;
+package negocio;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class Habitación {
     private Long id;
@@ -6,12 +9,14 @@ public class Habitación {
     private String numero;
     private int capacidad;
     private float area;
+    private List<Enfermero> enfermeros;
 
-    public Habitación(Long id, String numero, int capacidad, float area) {
+    public Habitación(Long id, String numero, int capacidad, float area, List<Enfermero> enfermeros) {
         this.id = idAux;
         this.numero = numero;
         this.capacidad = capacidad;
         this.area = area;
+        this.enfermeros = new ArrayList<>();
         idAux++;
     }
 
@@ -54,4 +59,8 @@ public class Habitación {
     public void setArea(float area) {
         this.area = area;
     }
+
+    public List<Enfermero> getEnfermeros() { return enfermeros; }
+
+    public void setEnfermeros(List<Enfermero> enfermeros) { this.enfermeros = enfermeros; }
 }

@@ -1,4 +1,4 @@
-package bClases;
+package negocio;
 
 public class Ambulancia {
     private Long id;
@@ -27,9 +27,7 @@ public class Ambulancia {
         return idAux;
     }
 
-    public static void setIdAux(Long idAux) {
-        Ambulancia.idAux = idAux;
-    }
+    public static void setIdAux(Long idAux) { Ambulancia.idAux = idAux; }
 
     public String getPlaca() {
         return placa;

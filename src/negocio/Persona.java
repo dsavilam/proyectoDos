@@ -1,4 +1,4 @@
-package bClases;
+package negocio;
 
 public abstract class Persona {
     protected Long id;
@@ -6,12 +6,14 @@ public abstract class Persona {
     protected String nombre;
     protected String apellido;
     protected String noIdentificacion;
+    protected TipoIdentificacion tipoIdentificacion;
 
-    public Persona(Long id, String nombre, String apellido, String noIdentificacion) {
+    public Persona(Long id, String nombre, String apellido, String noIdentificacion, TipoIdentificacion tipoIdentificacion) {
         this.id = idAux;
         this.nombre = nombre;
         this.apellido = apellido;
         this.noIdentificacion = noIdentificacion;
+        this.tipoIdentificacion = tipoIdentificacion;
         idAux++;
     }
 
@@ -54,4 +56,8 @@ public abstract class Persona {
     public void setNoIdentificacion(String noIdentificacion) {
         this.noIdentificacion = noIdentificacion;
     }
+
+    public TipoIdentificacion getTipoIdentificacion() { return tipoIdentificacion; }
+
+    public void setTipoIdentificacion(TipoIdentificacion tipoIdentificacion) { this.tipoIdentificacion = tipoIdentificacion; }
 }

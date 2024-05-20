@@ -1,6 +1,8 @@
-package bClases;
+package negocio;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.List;
 
 public class CasoEmergencia {
     private Long id;
@@ -8,12 +10,18 @@ public class CasoEmergencia {
     private String direccion;
     private LocalDate fecha;
     private String descripcion;
+    private Ambulancia ambulancia;
+    private List<Paramedico> paramedicos;
+    private List<Paciente> pacientes;
 
-    public CasoEmergencia(Long id, String direccion, LocalDate fecha, String descripcion) {
+    public CasoEmergencia(Long id, String direccion, LocalDate fecha, String descripcion, Ambulancia ambulancia, List<Paramedico> paramedicos, List<Paciente> pacientes) {
         this.id = idAux;
         this.direccion = direccion;
         this.fecha = fecha;
         this.descripcion = descripcion;
+        this.ambulancia = ambulancia;
+        this.paramedicos = new ArrayList<>();
+        this.pacientes = new ArrayList<>();
         idAux++;
     }
 
@@ -56,4 +64,16 @@ public class CasoEmergencia {
     public void setDescripcion(String descripcion) {
         this.descripcion = descripcion;
     }
+
+    public Ambulancia getAmbulancia() { return ambulancia; }
+
+    public void setAmbulancia(Ambulancia ambulancia) { this.ambulancia = ambulancia; }
+
+    public List<Paramedico> getParamedicos() { return paramedicos; }
+
+    public void setParamedicos(List<Paramedico> paramedicos) { this.paramedicos = paramedicos; }
+
+    public List<Paciente> getPacientes() { return pacientes; }
+
+    public void setPacientes(List<Paciente> pacientes) { this.pacientes = pacientes; }
 }

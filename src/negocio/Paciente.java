@@ -1,10 +1,10 @@
-package bClases;
+package negocio;
 
 public class Paciente extends Persona{
     private String sintomas;
 
-    public Paciente(Long id, String nombre, String apellido, String noIdentificacion, String sintomas) {
-        super(id, nombre, apellido, noIdentificacion);
+    public Paciente(Long id, String nombre, String apellido, String noIdentificacion, TipoIdentificacion tipoIdentificacion, String sintomas) {
+        super(id, nombre, apellido, noIdentificacion, tipoIdentificacion);
         this.sintomas = sintomas;
     }
 

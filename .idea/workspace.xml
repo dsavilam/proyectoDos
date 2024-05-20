@@ -5,18 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="27e2acda-c878-483c-a846-5da58a9b07b3" name="Changes" comment="Version 3.1">
-      <change beforePath="$PROJECT_DIR$/src/bClases/Ambulancia.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bClases/Ambulancia.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bClases/CasoEmergencia.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bClases/CasoEmergencia.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bClases/CasoMedico.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bClases/CasoMedico.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bClases/Doctor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bClases/Doctor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bClases/Enfermero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bClases/Enfermero.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bClases/Habitación.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bClases/Habitación.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bClases/Paciente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bClases/Paciente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bClases/Paramedico.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bClases/Paramedico.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bClases/Persona.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bClases/Persona.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bClases/SEmergencias.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bClases/SEmergencias.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bClases/TipoIdentificacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bClases/TipoIdentificacion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bClases/claseEjemplo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bClases/Ambulancia.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/negocio/Ambulancia.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bClases/CasoEmergencia.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/negocio/CasoEmergencia.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bClases/CasoMedico.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/negocio/CasoMedico.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bClases/Doctor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/negocio/Doctor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bClases/Enfermero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/negocio/Enfermero.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bClases/Habitación.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/negocio/Habitación.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bClases/Paciente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/negocio/Paciente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bClases/Paramedico.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/negocio/Paramedico.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bClases/Persona.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/negocio/Persona.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bClases/SEmergencias.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/negocio/SEmergencias.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bClases/TipoIdentificacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/negocio/TipoIdentificacion.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,9 +53,7 @@
   &quot;associatedIndex&quot;: 1
 }</component>
   <component name="ProjectId" id="2gAJqNK5B9JE4kVKTGrk29EQm9k" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="1" id="Add" />
-  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -62,19 +61,18 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.Main.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
     "onboarding.tips.debug.path": "C:/Users/santi/Downloads/proyectoDosAvanzada/proyectoDos/src/Main.java",
-    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
-    "vue.rearranger.settings.migration": "true"
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
   }
 }]]></component>
   <component name="SharedIndexes">
@@ -92,7 +90,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1715134643041</updated>
-      <workItem from="1716164500641" duration="2117000" />
     </task>
     <task id="LOCAL-00001" summary="Version 2">
       <option name="closed" value="true" />
@@ -118,19 +115,8 @@
       <option name="project" value="LOCAL" />
       <updated>1715135661311</updated>
     </task>
-    <task id="LOCAL-00004" summary="Version 3.1">
-      <option name="closed" value="true" />
-      <created>1716164561879</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1716164561879</updated>
-    </task>
-    <option name="localTasksCounter" value="5" />
+    <option name="localTasksCounter" value="4" />
     <servers />
-  </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
