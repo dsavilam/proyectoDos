@@ -1,4 +1,4 @@
-package negocio;
+package Negocio;
 
 public class Enfermero extends Persona{
     private boolean administrativo;

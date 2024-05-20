@@ -1,4 +1,4 @@
-package negocio;
+package Negocio;
 
 public class TipoIdentificacion {
     private Long id;

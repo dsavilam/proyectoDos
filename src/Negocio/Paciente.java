@@ -1,4 +1,4 @@
-package negocio;
+package Negocio;
 
 public class Paciente extends Persona{
     private String sintomas;

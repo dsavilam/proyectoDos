@@ -1,4 +1,4 @@
-package negocio;
+package Negocio;
 
 public class Ambulancia {
     private Long id;

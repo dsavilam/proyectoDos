@@ -1,4 +1,4 @@
-package negocio;
+package Negocio;
 
 public abstract class Persona {
     protected Long id;

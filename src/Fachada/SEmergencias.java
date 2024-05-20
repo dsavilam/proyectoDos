@@ -1,4 +1,6 @@
-package negocio;
+package Fachada;
+
+import Negocio.*;
 
 import java.util.ArrayList;
 import java.util.List;

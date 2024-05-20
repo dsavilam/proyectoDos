@@ -1,24 +1,27 @@
-package negocio;
+package Negocio;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
-public class CasoMedico {
+public class CasoEmergencia {
     private Long id;
     private static Long idAux;
+    private String direccion;
     private LocalDate fecha;
     private String descripcion;
-    private Doctor doctor;
-    private List<Paciente> pacientes;
+    private Ambulancia ambulancia;
     private List<Paramedico> paramedicos;
-    public CasoMedico(Long id, LocalDate fecha, String descripcion, Doctor doctor, List<Paciente> pacientes, List<Paramedico> paramedicos) {
+    private List<Paciente> pacientes;
+
+    public CasoEmergencia(Long id, String direccion, LocalDate fecha, String descripcion, Ambulancia ambulancia, List<Paramedico> paramedicos, List<Paciente> pacientes) {
         this.id = idAux;
+        this.direccion = direccion;
         this.fecha = fecha;
         this.descripcion = descripcion;
-        this.doctor = doctor;
-        this.pacientes = new ArrayList<>();
+        this.ambulancia = ambulancia;
         this.paramedicos = new ArrayList<>();
+        this.pacientes = new ArrayList<>();
         idAux++;
     }
 
@@ -35,7 +38,15 @@ public class CasoMedico {
     }
 
     public static void setIdAux(Long idAux) {
-        CasoMedico.idAux = idAux;
+        CasoEmergencia.idAux = idAux;
+    }
+
+    public String getDireccion() {
+        return direccion;
+    }
+
+    public void setDireccion(String direccion) {
+        this.direccion = direccion;
     }
 
     public LocalDate getFecha() {
@@ -54,15 +65,15 @@ public class CasoMedico {
         this.descripcion = descripcion;
     }
 
-    public Doctor getDoctor() { return doctor; }
+    public Ambulancia getAmbulancia() { return ambulancia; }
 
-    public void setDoctor(Doctor doctor) { this.doctor = doctor; }
-
-    public List<Paciente> getPacientes() { return pacientes; }
-
-    public void setPacientes(List<Paciente> pacientes) { this.pacientes = pacientes; }
+    public void setAmbulancia(Ambulancia ambulancia) { this.ambulancia = ambulancia; }
 
     public List<Paramedico> getParamedicos() { return paramedicos; }
 
     public void setParamedicos(List<Paramedico> paramedicos) { this.paramedicos = paramedicos; }
+
+    public List<Paciente> getPacientes() { return pacientes; }
+
+    public void setPacientes(List<Paciente> pacientes) { this.pacientes = pacientes; }
 }

@@ -1,4 +1,4 @@
-package negocio;
+package Negocio;
 
 public class Doctor extends Persona{
     private String especialidad;
