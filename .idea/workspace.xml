@@ -4,7 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="27e2acda-c878-483c-a846-5da58a9b07b3" name="Changes" comment="Version 3.1" />
+    <list default="true" id="27e2acda-c878-483c-a846-5da58a9b07b3" name="Changes" comment="Version 3.1">
+      <change beforePath="$PROJECT_DIR$/src/bClases/Ambulancia.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bClases/Ambulancia.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bClases/CasoEmergencia.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bClases/CasoEmergencia.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bClases/CasoMedico.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bClases/CasoMedico.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bClases/Doctor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bClases/Doctor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bClases/Enfermero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bClases/Enfermero.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bClases/Habitación.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bClases/Habitación.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bClases/Paciente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bClases/Paciente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bClases/Paramedico.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bClases/Paramedico.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bClases/Persona.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bClases/Persona.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bClases/SEmergencias.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bClases/SEmergencias.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bClases/TipoIdentificacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bClases/TipoIdentificacion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bClases/claseEjemplo.java" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,23 +33,28 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "dsavilam"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;dsavilam&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/dsavilam/proyectoDos.git",
-    "accountId": "cfd8c067-12c3-49d9-b27a-8ca1a3d4b650"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/dsavilam/proyectoDos.git&quot;,
+    &quot;accountId&quot;: &quot;cfd8c067-12c3-49d9-b27a-8ca1a3d4b650&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 1
-}]]></component>
+}</component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectId" id="2gAJqNK5B9JE4kVKTGrk29EQm9k" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -44,12 +62,28 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.Main.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "onboarding.tips.debug.path": "C:/Users/santi/Downloads/proyectoDosAvanzada/proyectoDos/src/Main.java"
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "C:/Users/santi/Downloads/proyectoDosAvanzada/proyectoDos/src/Main.java",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
+    "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-22-openjdk-22-4caba194b151-f504ca98" />
+      </set>
+    </attachedChunks>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -58,6 +92,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1715134643041</updated>
+      <workItem from="1716164500641" duration="2117000" />
     </task>
     <task id="LOCAL-00001" summary="Version 2">
       <option name="closed" value="true" />
@@ -83,8 +118,19 @@
       <option name="project" value="LOCAL" />
       <updated>1715135661311</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Version 3.1">
+      <option name="closed" value="true" />
+      <created>1716164561879</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1716164561879</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
