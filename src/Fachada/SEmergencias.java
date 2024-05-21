@@ -77,8 +77,15 @@ public class SEmergencias {
         impCasoEmergencia.modificarCasoEmergencia(casoEmergencia);
     }
 
-    public void registrarCasoEmergencia(CasoEmergencia casoEmergencia) {
+    public void registrarCasoEmergencia(CasoEmergencia casoEmergencia, List<Paramedico> paramedicos, Ambulancia ambulancia, List<Paciente> pacientes) {
         impCasoEmergencia.registrarCasoEmergencia(casoEmergencia);
+        for (Paramedico paramedico : paramedicos) {
+            // Código para asociar paramédico al caso de emergencia
+        }
+        // Código para asociar ambulancia al caso de emergencia
+        for (Paciente paciente : pacientes) {
+            // Código para asociar pacientes al caso de emergencia
+        }
     }
 
     // Métodos para manejar casos médicos
@@ -102,8 +109,15 @@ public class SEmergencias {
         impCasoMedico.modificarCasoMedico(casoMedico);
     }
 
-    public void registrarCasoMedico(CasoMedico casoMedico) {
+    public void registrarCasoMedico(CasoMedico casoMedico, List<Paciente> pacientes, List<Habitacion> habitaciones, Doctor doctor) {
         impCasoMedico.registrarCasoMedico(casoMedico);
+        for (Paciente paciente : pacientes) {
+            // Código para registrar pacientes en el caso médico
+        }
+        for (Habitacion habitacion : habitaciones) {
+            // Código para asignar habitaciones a los pacientes
+        }
+        // Código para asignar doctor al caso médico
     }
 
     // Métodos para manejar ambulancias
@@ -127,12 +141,78 @@ public class SEmergencias {
         impAmbulancia.modificarAmbulancia(ambulancia);
     }
 
+    // Métodos para manejar tipos de identificación
+    public void agregarTipoIdentificacion(TipoIdentificacion tipoIdentificacion) {
+        impTipoIdentificacion.agregarTipoIdentificacion(tipoIdentificacion);
+    }
+
+    public void eliminarTipoIdentificacion(long id) throws ObjetoNoEncontradoException {
+        try {
+            impTipoIdentificacion.eliminarTipoIdentificacion(id);
+        } catch (Exception e) {
+            throw new ObjetoNoEncontradoException("Tipo de identificación no encontrado");
+        }
+    }
+
+    public List<TipoIdentificacion> listarTiposIdentificacion() {
+        return impTipoIdentificacion.listarTipoIdentificacion();
+    }
+
+    public void modificarTipoIdentificacion(TipoIdentificacion tipoIdentificacion) {
+        impTipoIdentificacion.modificarTipoIdentificacion(tipoIdentificacion);
+    }
+
+    // Métodos para manejar paramédicos
+    public void agregarParamedico(Paramedico paramedico) {
+        impParamedico.agregarParamedico(paramedico);
+    }
+
+    public void eliminarParamedico(long id) throws ObjetoNoEncontradoException {
+        try {
+            impParamedico.eliminarParamedico(id);
+        } catch (Exception e) {
+            throw new ObjetoNoEncontradoException("Paramédico no encontrado");
+        }
+    }
+
+    public List<Paramedico> listarParamedicos() {
+        return impParamedico.listarParamedico();
+    }
+
+    public void modificarParamedico(Paramedico paramedico) {
+        impParamedico.modificarParamedico(paramedico);
+    }
+
+    // Métodos para manejar enfermeros
+    public void agregarEnfermero(Enfermero enfermero) {
+        impEnfermero.agregarEnfermero(enfermero);
+    }
+
+    public void eliminarEnfermero(long id) throws ObjetoNoEncontradoException {
+        try {
+            impEnfermero.eliminarEnfermero(id);
+        } catch (Exception e) {
+            throw new ObjetoNoEncontradoException("Enfermero no encontrado");
+        }
+    }
+
+    public List<Enfermero> listarEnfermeros() {
+        return impEnfermero.listarEnfermero();
+    }
+
+    public void modificarEnfermero(Enfermero enfermero) {
+        impEnfermero.modificarEnfermero(enfermero);
+    }
+
     // Métodos para guardar y cargar datos
     public void guardarDatos() {
         impDoctor.guardarDatosDoctor();
         impCasoEmergencia.guardarDatosCasoEmergencia();
         impCasoMedico.guardarDatosCasoMedico();
         impAmbulancia.guardarDatosAmbulancia();
+        impTipoIdentificacion.guardarDatosTipoIdentificacion();
+        impParamedico.guardarDatosParamedico();
+        impEnfermero.guardarDatosEnfermero();
     }
 
     public void cargarDatos() {
@@ -140,5 +220,9 @@ public class SEmergencias {
         impCasoEmergencia.cargarDatosCasoEmergencia();
         impCasoMedico.cargarDatosCasoMedico();
         impAmbulancia.cargarDatosAmbulancia();
+        impTipoIdentificacion.cargarDatosTipoIdentificacion();
+        impParamedico.cargarDatosParamedico();
+        impEnfermero.cargarDatosEnfermero();
     }
 }
+
