@@ -1,7 +1,6 @@
 package Negocio.Implementaciones;
 
 import Negocio.Clases.CasoEmergencia;
-import Negocio.Interfaces.InterfazAmbulancia;
 import Negocio.Interfaces.InterfazCasoEmergencia;
 
 import java.util.ArrayList;

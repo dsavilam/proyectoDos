@@ -17,22 +17,6 @@ public abstract class Persona {
         idAux++;
     }
 
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public static Long getIdAux() {
-        return idAux;
-    }
-
-    public static void setIdAux(Long idAux) {
-        Persona.idAux = idAux;
-    }
-
     public String getNombre() {
         return nombre;
     }
