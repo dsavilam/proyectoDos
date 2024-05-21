@@ -1,7 +1,7 @@
 package Negocio.Implementaciones;
 
-import Negocio.Clases.Enfermero;
 import Negocio.Clases.Habitacion;
+import Negocio.Datos.Persistencia;
 import Negocio.Interfaces.InterfazHabitacion;
 
 import java.util.ArrayList;
@@ -41,13 +41,12 @@ public class ImpHabitacion implements InterfazHabitacion{
 
     @Override
     public void guardarDatosHabitacion() {
-        // Implementación para guardar los datos de los casos médicos
-        // Esto podría involucrar escribir en un archivo o una base de datos
+        Persistencia.guardarDatos(habitaciones, "habitaciones.dat");
     }
 
     @Override
     public void cargarDatosHabitacion() {
-        // Implementación para cargar los datos de los casos médicos
-        // Esto podría involucrar leer de un archivo o una base de datos
+        habitaciones = (List<Habitacion>) Persistencia.cargarDatos("habitaciones.dat");
     }
+
 }

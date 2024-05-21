@@ -1,6 +1,7 @@
 package Negocio.Implementaciones;
 
 import Negocio.Clases.CasoMedico;
+import Negocio.Datos.Persistencia;
 import Negocio.Interfaces.InterfazCasoMedico;
 import java.util.ArrayList;
 import java.util.List;
@@ -44,12 +45,12 @@ public class ImpCasoMedico implements InterfazCasoMedico {
 
     @Override
     public void guardarDatosCasoMedico() {
-        // Implementación para guardar los datos de los casos médicos
+        Persistencia.guardarDatos(casosMedicos, "casosMedicos.dat");
     }
 
     @Override
     public void cargarDatosCasoMedico() {
-        // Implementación para cargar los datos de los casos médicos
+        casosMedicos = (List<CasoMedico>) Persistencia.cargarDatos("casosMedicos.dat");
     }
 }
 

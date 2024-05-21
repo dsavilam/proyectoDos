@@ -1,6 +1,7 @@
 package Negocio.Implementaciones;
 
 import Negocio.Clases.Ambulancia;
+import Negocio.Datos.Persistencia;
 import Negocio.Interfaces.InterfazAmbulancia;
 import java.util.ArrayList;
 import java.util.List;
@@ -39,11 +40,11 @@ public class ImpAmbulancia implements InterfazAmbulancia {
 
     @Override
     public void guardarDatosAmbulancia() {
-        // Implementación para guardar los datos de las ambulancias
+        Persistencia.guardarDatos(ambulancias, "ambulancias.dat");
     }
 
     @Override
     public void cargarDatosAmbulancia() {
-        // Implementación para cargar los datos de las ambulancias
+        ambulancias = (List<Ambulancia>) Persistencia.cargarDatos("ambulancias.dat");
     }
 }

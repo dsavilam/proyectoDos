@@ -1,7 +1,7 @@
 package Negocio.Implementaciones;
 
-import Negocio.Clases.Enfermero;
 import Negocio.Clases.TipoIdentificacion;
+import Negocio.Datos.Persistencia;
 import Negocio.Interfaces.InterfazTipoIdentificacion;
 
 import java.util.ArrayList;
@@ -41,13 +41,12 @@ public class ImpTipoIdentificacion implements InterfazTipoIdentificacion {
 
     @Override
     public void guardarDatosTipoIdentificacion() {
-        // Implementación para guardar los datos de los doctores
-        // Esto podría involucrar escribir en un archivo o una base de datos
+        Persistencia.guardarDatos(tipoIdentificacionLista, "tiposIdentificacion.dat");
     }
 
     @Override
     public void cargarDatosTipoIdentificacion() {
-        // Implementación para cargar los datos de los doctores
-        // Esto podría involucrar leer de un archivo o una base de datos
+        tipoIdentificacionLista = (List<TipoIdentificacion>) Persistencia.cargarDatos("tiposIdentificacion.dat");
     }
+
 }

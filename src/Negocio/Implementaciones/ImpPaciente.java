@@ -1,7 +1,7 @@
 package Negocio.Implementaciones;
 
-import Negocio.Clases.Enfermero;
 import Negocio.Clases.Paciente;
+import Negocio.Datos.Persistencia;
 import Negocio.Interfaces.InterfazPaciente;
 
 import java.util.ArrayList;
@@ -41,13 +41,12 @@ public class ImpPaciente implements InterfazPaciente {
 
     @Override
     public void guardarDatosPaciente() {
-        // Implementación para guardar los datos de los doctores
-        // Esto podría involucrar escribir en un archivo o una base de datos
+        Persistencia.guardarDatos(pacientes, "pacientes.dat");
     }
 
     @Override
     public void cargarDatosPaciente() {
-        // Implementación para cargar los datos de los doctores
-        // Esto podría involucrar leer de un archivo o una base de datos
+        pacientes = (List<Paciente>) Persistencia.cargarDatos("pacientes.dat");
     }
+
 }

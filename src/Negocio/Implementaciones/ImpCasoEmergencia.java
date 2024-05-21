@@ -1,6 +1,7 @@
 package Negocio.Implementaciones;
 
 import Negocio.Clases.CasoEmergencia;
+import Negocio.Datos.Persistencia;
 import Negocio.Interfaces.InterfazCasoEmergencia;
 import java.util.ArrayList;
 import java.util.List;
@@ -41,14 +42,13 @@ public class ImpCasoEmergencia implements InterfazCasoEmergencia {
     public void registrarCasoEmergencia(CasoEmergencia casoEmergencia) {
         // Implementación específica para registrar un caso de emergencia
     }
-
     @Override
     public void guardarDatosCasoEmergencia() {
-        // Implementación para guardar los datos de los casos de emergencia
+        Persistencia.guardarDatos(casosEmergencia, "casosEmergencia.dat");
     }
 
     @Override
     public void cargarDatosCasoEmergencia() {
-        // Implementación para cargar los datos de los casos de emergencia
+        casosEmergencia = (List<CasoEmergencia>) Persistencia.cargarDatos("casosEmergencia.dat");
     }
 }
