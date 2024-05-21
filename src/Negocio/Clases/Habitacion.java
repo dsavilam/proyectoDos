@@ -3,7 +3,7 @@ package Negocio.Clases;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Habitación {
+public class Habitacion {
     private Long id;
     private static Long idAux;
     private String numero;
@@ -11,7 +11,7 @@ public class Habitación {
     private float area;
     private List<Enfermero> enfermeros;
 
-    public Habitación(String numero, int capacidad, float area) {
+    public Habitacion(String numero, int capacidad, float area) {
         this.id = idAux;
         this.numero = numero;
         this.capacidad = capacidad;
@@ -33,7 +33,7 @@ public class Habitación {
     }
 
     public static void setIdAux(Long idAux) {
-        Habitación.idAux = idAux;
+        Habitacion.idAux = idAux;
     }
 
     public String getNumero() {

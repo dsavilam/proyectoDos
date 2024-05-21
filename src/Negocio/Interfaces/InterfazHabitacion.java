@@ -1,12 +1,12 @@
 package Negocio.Interfaces;
 
-import Negocio.Clases.Habitación;
+import Negocio.Clases.Habitacion;
 import java.util.List;
 
 public interface InterfazHabitacion {
-    void agregarHabitacion(Habitación habitación);
+    void agregarHabitacion(Habitacion habitacion);
     void eliminarHabitacion(long id);
-    List<Habitación> listarHabitacion();
+    List<Habitacion> listarHabitacion();
     void guardarDatosHabitacion();
     void cargarDatosHabitacion();
 }
