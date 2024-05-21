@@ -1,4 +1,42 @@
 package Negocio.Implementaciones;
 
-public class ImpEnfermero {
+import Negocio.Clases.Enfermero;
+import Negocio.Interfaces.InterfazEnfermero;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class ImpEnfermero implements InterfazEnfermero{
+    private List<Enfermero> enfermeros;
+
+    public ImpEnfermero () {
+        this.enfermeros = new ArrayList<>();
+    }
+
+    @Override
+    public void agregarEnfermero(Enfermero enfermero) {
+        enfermeros.add(enfermero);
+    }
+
+    @Override
+    public void eliminarEnfermero(long id) {
+        enfermeros.removeIf(c -> c.getId() == id);
+    }
+
+    @Override
+    public List<Enfermero> listarEnfermero() {
+        return new ArrayList<>(enfermeros);
+    }
+
+    @Override
+    public void guardarDatosEnfermero() {
+        // Implementación para guardar los datos de los casos médicos
+        // Esto podría involucrar escribir en un archivo o una base de datos
+    }
+
+    @Override
+    public void cargarDatosEnfermero() {
+        // Implementación para cargar los datos de los casos médicos
+        // Esto podría involucrar leer de un archivo o una base de datos
+    }
 }

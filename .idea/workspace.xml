@@ -4,22 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="27e2acda-c878-483c-a846-5da58a9b07b3" name="Changes" comment="Version 3.3">
-      <change afterPath="$PROJECT_DIR$/src/Negocio/Implementaciones/ImpAmbulancia.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Negocio/Implementaciones/ImpCasoEmergencia.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Negocio/Implementaciones/ImpCasoMedico.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Negocio/Implementaciones/ImpDoctor.java" afterDir="false" />
+    <list default="true" id="27e2acda-c878-483c-a846-5da58a9b07b3" name="Changes" comment="Version 3.4">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Negocio/DataAccessObject/AmbulanciaDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Negocio/DataAccessObject/CasoEmergenciaDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Negocio/DataAccessObject/CasoMedicoDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Negocio/DataAccessObject/DoctorDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Negocio/DataAccessObject/EnfermeroDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Negocio/DataAccessObject/HabitacionDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Negocio/DataAccessObject/PacienteDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Negocio/DataAccessObject/ParamedicoDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Negocio/DataAccessObject/TipoIdentificacionDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Negocio/Interfaces/InterfazDoctor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Negocio/Interfaces/InterfazDoctor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Negocio/Implementaciones/ImpEnfermero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Negocio/Implementaciones/ImpEnfermero.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Negocio/Interfaces/InterfazEnfermero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Negocio/Interfaces/InterfazEnfermero.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,7 +111,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716260602281</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Version 3.4">
+      <option name="closed" value="true" />
+      <created>1716262514526</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1716262514526</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -142,6 +138,7 @@
     <MESSAGE value="Version 3" />
     <MESSAGE value="Version 3.1" />
     <MESSAGE value="Version 3.3" />
-    <option name="LAST_COMMIT_MESSAGE" value="Version 3.3" />
+    <MESSAGE value="Version 3.4" />
+    <option name="LAST_COMMIT_MESSAGE" value="Version 3.4" />
   </component>
 </project>
