@@ -4,8 +4,8 @@ public class Paramedico extends Persona{
     private boolean lider;
     private boolean sabeConducir;
 
-    public Paramedico(Long id, String nombre, String apellido, String noIdentificacion, TipoIdentificacion tipoIdentificacion, boolean lider, boolean sabeConducir) {
-        super(id, nombre, apellido, noIdentificacion, tipoIdentificacion);
+    public Paramedico(String nombre, String apellido, String noIdentificacion, TipoIdentificacion tipoIdentificacion, boolean lider, boolean sabeConducir) {
+        super(nombre, apellido, noIdentificacion, tipoIdentificacion);
         this.lider = lider;
         this.sabeConducir = sabeConducir;
     }

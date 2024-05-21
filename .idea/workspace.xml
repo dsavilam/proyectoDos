@@ -4,12 +4,38 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="27e2acda-c878-483c-a846-5da58a9b07b3" name="Changes" comment="Version 3.21">
+    <list default="true" id="27e2acda-c878-483c-a846-5da58a9b07b3" name="Changes" comment="Version 3.2.1">
+      <change afterPath="$PROJECT_DIR$/src/Interfaces/InterfazTipoIdentificacion.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DataAccessObject/AmbulanciaDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataAccessObject/AmbulanciaDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DataAccessObject/CasoMedicoDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataAccessObject/CasoMedicoDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DataAccessObject/DoctorDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataAccessObject/DoctorDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Fachada/SEmergencias.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Fachada/SEmergencias.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interfaces/Implementacion/IIAmbulancia.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interfaces/Implementacion/IICasoEmergencia.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interfaces/Implementacion/IICasoMedico.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interfaces/Implementacion/IIDoctor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interfaces/Implementacion/IIEnfermero.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interfaces/Implementacion/IIHabitacion.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interfaces/Implementacion/IIPaciente.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interfaces/Implementacion/IIParamedico.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interfaces/Implementacion/IITipoIdentificacion.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interfaces/InterfazAmbulancia.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interfaces/InterfazAmbulancia.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Interfaces/InterfazCasoEmergencia.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interfaces/InterfazCasoEmergencia.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interfaces/InterfazCasoMedico.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interfaces/InterfazCasoMedico.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interfaces/InterfazDoctor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interfaces/InterfazDoctor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interfaces/InterfazEnfermero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interfaces/InterfazEnfermero.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interfaces/InterfazHabitacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interfaces/InterfazHabitacion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interfaces/InterfazPaciente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interfaces/InterfazPaciente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interfaces/InterfazParamedico.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interfaces/InterfazParamedico.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interfaces/InterfazTipoIdentificación.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Negocio/Ambulancia.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Negocio/Ambulancia.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Negocio/CasoEmergencia.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Negocio/CasoEmergencia.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Negocio/CasoMedico.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Negocio/CasoMedico.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Negocio/Doctor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Negocio/Doctor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Negocio/Enfermero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Negocio/Enfermero.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Negocio/Habitación.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Negocio/Habitación.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Negocio/Paciente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Negocio/Paciente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Negocio/Paramedico.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Negocio/Paramedico.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Negocio/Persona.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Negocio/Persona.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Negocio/TipoIdentificacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Negocio/TipoIdentificacion.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +112,7 @@
       <option name="presentableId" value="Default" />
       <updated>1715134643041</updated>
       <workItem from="1716164500641" duration="2117000" />
-      <workItem from="1716238816970" duration="796000" />
+      <workItem from="1716238816970" duration="7814000" />
     </task>
     <task id="LOCAL-00001" summary="Version 2">
       <option name="closed" value="true" />
@@ -128,7 +154,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716238665626</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Version 3.2.1">
+      <option name="closed" value="true" />
+      <created>1716239634625</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1716239634625</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -149,6 +183,8 @@
     <MESSAGE value="Version 2" />
     <MESSAGE value="Version 3" />
     <MESSAGE value="Version 3.1" />
-    <option name="LAST_COMMIT_MESSAGE" value="Version 3.1" />
+    <MESSAGE value="Version 3.21" />
+    <MESSAGE value="Version 3.2.1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Version 3.2.1" />
   </component>
 </project>

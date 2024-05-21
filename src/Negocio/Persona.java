@@ -8,7 +8,7 @@ public abstract class Persona {
     protected String noIdentificacion;
     protected TipoIdentificacion tipoIdentificacion;
 
-    public Persona(Long id, String nombre, String apellido, String noIdentificacion, TipoIdentificacion tipoIdentificacion) {
+    public Persona(String nombre, String apellido, String noIdentificacion, TipoIdentificacion tipoIdentificacion) {
         this.id = idAux;
         this.nombre = nombre;
         this.apellido = apellido;

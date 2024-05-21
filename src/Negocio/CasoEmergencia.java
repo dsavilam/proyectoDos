@@ -14,7 +14,7 @@ public class CasoEmergencia {
     private List<Paramedico> paramedicos;
     private List<Paciente> pacientes;
 
-    public CasoEmergencia(Long id, String direccion, LocalDate fecha, String descripcion, Ambulancia ambulancia, List<Paramedico> paramedicos, List<Paciente> pacientes) {
+    public CasoEmergencia(String direccion, LocalDate fecha, String descripcion, Ambulancia ambulancia) {
         this.id = idAux;
         this.direccion = direccion;
         this.fecha = fecha;

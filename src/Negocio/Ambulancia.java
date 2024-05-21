@@ -7,7 +7,7 @@ public class Ambulancia {
     private int capacidad;
     private float areaPaciente;
 
-    public Ambulancia(Long id, String placa, int capacidad, float areaPaciente) {
+    public Ambulancia(String placa, int capacidad, float areaPaciente) {
         this.id = idAux;
         this.placa = placa;
         this.capacidad = capacidad;

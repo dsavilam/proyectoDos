@@ -6,7 +6,7 @@ public class TipoIdentificacion {
     private String codigo;
     private String nombre;
 
-    public TipoIdentificacion(Long id, String codigo, String nombre) {
+    public TipoIdentificacion(String codigo, String nombre) {
         this.id = idAux;
         this.codigo = codigo;
         this.nombre = nombre;

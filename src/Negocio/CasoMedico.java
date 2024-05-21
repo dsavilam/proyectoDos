@@ -12,7 +12,7 @@ public class CasoMedico {
     private Doctor doctor;
     private List<Paciente> pacientes;
     private List<Paramedico> paramedicos;
-    public CasoMedico(Long id, LocalDate fecha, String descripcion, Doctor doctor, List<Paciente> pacientes, List<Paramedico> paramedicos) {
+    public CasoMedico(LocalDate fecha, String descripcion, Doctor doctor, List<Paciente> pacientes) {
         this.id = idAux;
         this.fecha = fecha;
         this.descripcion = descripcion;

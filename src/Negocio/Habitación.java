@@ -11,7 +11,7 @@ public class Habitación {
     private float area;
     private List<Enfermero> enfermeros;
 
-    public Habitación(Long id, String numero, int capacidad, float area, List<Enfermero> enfermeros) {
+    public Habitación(String numero, int capacidad, float area) {
         this.id = idAux;
         this.numero = numero;
         this.capacidad = capacidad;

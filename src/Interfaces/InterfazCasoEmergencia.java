@@ -7,7 +7,7 @@ public interface InterfazCasoEmergencia {
     void agregarCasoEmergencia(CasoEmergencia casoEmergencia);
     void eliminarCasoEmergencia(long id);
     List<CasoEmergencia> listarCasosEmergencia();
-    void guardarDatos();
-    void cargarDatos();
+    void guardarDatosCasoEmergencia();
+    void cargarDatosCasoEmergencia();
 }
 
