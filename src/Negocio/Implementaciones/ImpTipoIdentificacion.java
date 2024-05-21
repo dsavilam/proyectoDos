@@ -1,5 +1,6 @@
 package Negocio.Implementaciones;
 
+import Negocio.Clases.Enfermero;
 import Negocio.Clases.TipoIdentificacion;
 import Negocio.Interfaces.InterfazTipoIdentificacion;
 
@@ -26,6 +27,16 @@ public class ImpTipoIdentificacion implements InterfazTipoIdentificacion {
     @Override
     public List<TipoIdentificacion> listarTipoIdentificacion() {
         return new ArrayList<>(tipoIdentificacionLista);
+    }
+
+    @Override
+    public void modificarTipoIdentificacion(TipoIdentificacion tipoIdentificacion) {
+        for (int i = 0; i < tipoIdentificacionLista.size(); i++) {
+            if (tipoIdentificacionLista.get(i).getId() == tipoIdentificacion.getId()) {
+                tipoIdentificacionLista.set(i, tipoIdentificacion);
+                break;
+            }
+        }
     }
 
     @Override

@@ -17,6 +17,14 @@ public abstract class Persona {
         idAux++;
     }
 
+    public Long getId() {
+        return id;
+    }
+
+    public static Long getIdAux() {
+        return idAux;
+    }
+
     public String getNombre() {
         return nombre;
     }

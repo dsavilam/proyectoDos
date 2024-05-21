@@ -1,5 +1,6 @@
 package Negocio.Implementaciones;
 
+import Negocio.Clases.Enfermero;
 import Negocio.Clases.Habitacion;
 import Negocio.Interfaces.InterfazHabitacion;
 
@@ -26,6 +27,16 @@ public class ImpHabitacion implements InterfazHabitacion{
     @Override
     public List<Habitacion> listarHabitacion() {
         return new ArrayList<>(habitaciones);
+    }
+
+    @Override
+    public void modificarHabitacion(Habitacion habitacion) {
+        for (int i = 0; i < habitaciones.size(); i++) {
+            if (habitaciones.get(i).getId() == habitacion.getId()) {
+                habitaciones.set(i, habitacion);
+                break;
+            }
+        }
     }
 
     @Override

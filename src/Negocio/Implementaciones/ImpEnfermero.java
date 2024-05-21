@@ -1,5 +1,6 @@
 package Negocio.Implementaciones;
 
+import Negocio.Clases.Doctor;
 import Negocio.Clases.Enfermero;
 import Negocio.Interfaces.InterfazEnfermero;
 
@@ -26,6 +27,16 @@ public class ImpEnfermero implements InterfazEnfermero{
     @Override
     public List<Enfermero> listarEnfermero() {
         return new ArrayList<>(enfermeros);
+    }
+
+    @Override
+    public void modificarEnfermero(Enfermero enfermero) {
+        for (int i = 0; i < enfermeros.size(); i++) {
+            if (enfermeros.get(i).getId() == enfermero.getId()) {
+                enfermeros.set(i, enfermero);
+                break;
+            }
+        }
     }
 
     @Override

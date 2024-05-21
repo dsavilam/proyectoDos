@@ -1,5 +1,6 @@
 package Negocio.Implementaciones;
 
+import Negocio.Clases.Enfermero;
 import Negocio.Clases.Paramedico;
 import Negocio.Interfaces.InterfazParamedico;
 
@@ -26,6 +27,16 @@ public class ImpParamedico implements InterfazParamedico {
     @Override
     public List<Paramedico> listarParamedico() {
         return new ArrayList<>(paramedicos);
+    }
+
+    @Override
+    public void modificarParamedico(Paramedico paramedico) {
+        for (int i = 0; i < paramedicos.size(); i++) {
+            if (paramedicos.get(i).getId() == paramedico.getId()) {
+                paramedicos.set(i, paramedico);
+                break;
+            }
+        }
     }
 
     @Override

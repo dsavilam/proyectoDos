@@ -1,5 +1,6 @@
 package Negocio.Implementaciones;
 
+import Negocio.Clases.Enfermero;
 import Negocio.Clases.Paciente;
 import Negocio.Interfaces.InterfazPaciente;
 
@@ -26,6 +27,16 @@ public class ImpPaciente implements InterfazPaciente {
     @Override
     public List<Paciente> listarPaciente() {
         return new ArrayList<>(pacientes);
+    }
+
+    @Override
+    public void modificarPaciente(Paciente paciente) {
+        for (int i = 0; i < pacientes.size(); i++) {
+            if (pacientes.get(i).getId() == paciente.getId()) {
+                pacientes.set(i, paciente);
+                break;
+            }
+        }
     }
 
     @Override
