@@ -25,6 +25,14 @@ public abstract class Persona {
         return idAux;
     }
 
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public static void setIdAux(Long idAux) {
+        Persona.idAux = idAux;
+    }
+
     public String getNombre() {
         return nombre;
     }

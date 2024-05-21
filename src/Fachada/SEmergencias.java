@@ -1,5 +1,6 @@
 package Fachada;
 
+import Negocio.Datos.LectorDatos;
 import Negocio.Clases.*;
 import Negocio.Implementaciones.*;
 import Negocio.Interfaces.*;
@@ -11,12 +12,23 @@ public class SEmergencias {
     private InterfazCasoEmergencia impCasoEmergencia;
     private InterfazCasoMedico impCasoMedico;
     private InterfazAmbulancia impAmbulancia;
+    private InterfazTipoIdentificacion impTipoIdentificacion;
+    private InterfazParamedico impParamedico;
+    private InterfazEnfermero impEnfermero;
 
     public SEmergencias() {
         this.impDoctor = new ImpDoctor();
         this.impCasoEmergencia = new ImpCasoEmergencia();
         this.impCasoMedico = new ImpCasoMedico();
         this.impAmbulancia = new ImpAmbulancia();
+        this.impTipoIdentificacion = new ImpTipoIdentificacion();
+        this.impParamedico = new ImpParamedico();
+        this.impEnfermero = new ImpEnfermero();
+    }
+
+    public void cargarDatosDesdeArchivo(String archivo) {
+        LectorDatos lector = new LectorDatos();
+        lector.cargarDatosDesdeArchivo(archivo);
     }
 
     // Métodos para manejar doctores
