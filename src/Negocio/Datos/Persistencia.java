@@ -4,7 +4,7 @@ import Negocio.Clases.*;
 import java.io.*;
 import java.util.List;
 
-//Creamos la clase para poder guardar los datos jaja
+//Creamos la clase para poder guardar los datos binarios jaja
 public class Persistencia {
     public static void guardarDatos(List<?> lista, String archivo) {
         try (ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(archivo))) {
