@@ -1,0 +1,24 @@
+TiposIdentificacion
+id,codigo,nombre
+1,DNI,Documento Nacional de Identidad
+2,PAS,Pasaporte
+
+Ambulancias
+id,placa,capacidad,areaPaciente
+1,ABC123,4,12.5
+2,XYZ789,2,8.0
+
+Doctores
+id,nombre,apellido,noIdentificacion,tipoIdentificacion,especialidad,noMatricula
+1,Juan,Perez,12345678,1,Cardiología,1001
+2,Ana,Gomez,87654321,2,Neurología,1002
+
+Paramedicos
+id,nombre,apellido,noIdentificacion,tipoIdentificacion,lider,sabeConducir
+1,Carlos,Ramirez,11223344,1,true,true
+2,Laura,Martinez,44332211,2,false,true
+
+Enfermeros
+id,nombre,apellido,noIdentificacion,tipoIdentificacion,administrativo
+1,María,López,22334455,1,true
+2,Pedro,Gonzalez,55443322,2,false
