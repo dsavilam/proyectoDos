@@ -1,6 +1,8 @@
 package Negocio.Clases;
 
-public abstract class Persona {
+import java.io.Serializable;
+
+public abstract class Persona implements Serializable {
     protected Long id;
     protected static Long idAux = 1L;
     protected String nombre;

@@ -3,6 +3,8 @@ package Negocio.Datos;
 import Negocio.Clases.*;
 import java.io.*;
 import java.util.List;
+import java.io.Serializable;
+
 
 //Creamos la clase para poder guardar los datos binarios jaja
 public class Persistencia {
