@@ -177,7 +177,6 @@ public class SEmergencias {
         impAmbulancia.cargarDatosAmbulancia();
     }
 
-    // Método para el menú interactivo
     public void mostrarMenu() {
         Scanner scanner = new Scanner(System.in);
         while (true) {
@@ -194,7 +193,7 @@ public class SEmergencias {
             System.out.println("10. Salir");
 
             int opcion = scanner.nextInt();
-            scanner.nextLine();  // Consume newline
+            scanner.nextLine();
 
             switch (opcion) {
                 case 1:
@@ -283,7 +282,7 @@ public class SEmergencias {
                     System.out.println("Ingrese el ID de la ambulancia que se usará:");
                     long idAmbulancia = scanner.nextLong();
                     scanner.nextLine();  // Consume newline
-                    Ambulancia ambulancia = impAmbulancia.obtenerAmbulanciaPorId(idAmbulancia);
+                    Ambulancia ambulancia = ambulancia.getId();
                     List<Paciente> pacientes = new ArrayList<>();
                     System.out.println("Ingrese el número de pacientes a registrar:");
                     int numPacientes = scanner.nextInt();

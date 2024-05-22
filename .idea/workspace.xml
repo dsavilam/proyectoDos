@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="27e2acda-c878-483c-a846-5da58a9b07b3" name="Changes" comment="Version 3.8.3">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="27e2acda-c878-483c-a846-5da58a9b07b3" name="Changes" comment="Version 3.9">
       <change beforePath="$PROJECT_DIR$/src/Fachada/SEmergencias.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Fachada/SEmergencias.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Negocio/Clases/Habitacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Negocio/Clases/Habitacion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Negocio/Datos/LectorDatos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Negocio/Datos/LectorDatos.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -209,7 +206,23 @@
       <option name="project" value="LOCAL" />
       <updated>1716322810862</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Version 3.9">
+      <option name="closed" value="true" />
+      <created>1716347751857</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1716347751857</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Version 3.9">
+      <option name="closed" value="true" />
+      <created>1716347804217</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1716347804217</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -237,6 +250,7 @@
     <MESSAGE value="Version 3.8.1" />
     <MESSAGE value="Version 3.8.2" />
     <MESSAGE value="Version 3.8.3" />
-    <option name="LAST_COMMIT_MESSAGE" value="Version 3.8.3" />
+    <MESSAGE value="Version 3.9" />
+    <option name="LAST_COMMIT_MESSAGE" value="Version 3.9" />
   </component>
 </project>

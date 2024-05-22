@@ -1,24 +1,155 @@
-TiposIdentificacion
-id,codigo,nombre
-1,DNI,Documento Nacional de Identidad
-2,PAS,Pasaporte
-
-Ambulancias
-id,placa,capacidad,areaPaciente
-1,ABC123,4,12.5
-2,XYZ789,2,8.0
-
-Doctores
-id,nombre,apellido,noIdentificacion,tipoIdentificacion,especialidad,noMatricula
-1,Juan,Perez,12345678,1,Cardiología,1001
-2,Ana,Gomez,87654321,2,Neurología,1002
-
-Paramedicos
-id,nombre,apellido,noIdentificacion,tipoIdentificacion,lider,sabeConducir
-1,Carlos,Ramirez,11223344,1,true,true
-2,Laura,Martinez,44332211,2,false,true
-
-Enfermeros
-id,nombre,apellido,noIdentificacion,tipoIdentificacion,administrativo
-1,María,López,22334455,1,true
-2,Pedro,Gonzalez,55443322,2,false
+##AMBULANCIA##
+BAT817 2 4
+WZX972 1 2
+YIJ062 2 4
+XHC310 2 4
+JZM695 2 4
+TNE923 2 4
+RRS874 2 4
+VOK836 1 2
+BMM333 2 4
+ZUE176 1 2
+TXZ799 2 4
+ZJW644 2 4
+IPG183 1 2
+GFQ969 2 4
+BLM851 1 2
+##TIPO_DOC##
+RC Registro civil
+TI Tarjeta identidad
+CC Cedula ciudadania
+CE Cedula extranjeria
+##DOCTOR##
+Mallory Escobar CE 15520070 Hematologia 5511642510
+Jordana Burn CE 15172133 Genetica 2054670854
+Joseph Mack CC 51745630 Oncologia radioterapica 0632444129
+Rianne Mack CC 63389686 Nutriologia 6319112015
+Colleen Reeves CC 72221441 Farmacologia Clinica 2319751885
+Danyal Johnston CC 50822839 Nefrologia 7955897918
+Sarah-Jayne Pickett CC 70691781 Neurologia 6065746527
+Nathanael Person CC 49162482 Medicina familiar y comunitaria 8253952253
+Nigel Galvan CE 75189534 Estomatologia 5747859069
+Adeline Dodson CE 38874473 Medicina familiar y comunitaria 4522131800
+Jacques Booth CE 01520423 Angiologia 1317587316
+Devan Faulkner CE 65487442 Nefrologia 4131179393
+Yara Banks CE 00508831 Cardiologia 6891170296
+Hal Alexander CE 92845162 Oncologia medica 6893318704
+Carrie-Ann Howell CE 30143345 Pediatria 9813238326
+Colleen Coulson CC 78230975 Hematologia 4112628397
+Emilio Deacon CE 28186471 Reumatologia 3483806890
+Mia Burn CC 23964932 Psiquiatria 2042950507
+Storm Hensley CE 49735016 Medicina interna 4637682170
+Hal Mcculloch CE 74543981 Reumatologia 5548534505
+Lily-Mai Hensley CC 10855715 Anestesiologia 0785252183
+Ameerah Barlow CE 39320958 Nefrologia 6195074783
+Aislinn Booth CC 84241925 Genetica 7159843065
+Mia Muir CE 65994449 Endocrinologia 2786286812
+Cobie Villalobos CC 84651021 Medicina forense 3511684482
+Tahmid Partridge CE 34025525 Hematologia 3763840826
+Jimmy Everett CC 69661777 Neumologia 6541305612
+Yunus Hill CC 10577764 Nefrologia 7298139546
+Nida Searle CC 94716940 Hematologia 1792084282
+Jordana Howarth CE 29229363 Anestesiologia 3507162409
+Stephen Galvan CC 53962039 Neumologia 3840302845
+Pharrell Hernandez CE 55557874 Nefrologia 4093326792
+Reya Stott CE 80241577 Neurologia 4442849024
+Piers Thornton CE 00118724 Cardiologia 1998698371
+Inaaya Chaney CC 18996723 Nutriologia 1978928748
+Nyla Hayden CE 88727946 Alergologia 7906601384
+Nyla Welsh CC 71903588 Medicina interna 0815832024
+Kia Thornton CE 85470366 Hematologia 1944672365
+Kajus Henry CE 61581903 Angiologia 1564610995
+Tahmid Sharpe CE 96920658 Medicina del trabajo 9591575944
+##PARAMEDICO##
+Leona Mack CC 90553098 1 0
+Keri Trujillo CC 88391520 0 0
+Cobie Bates CC 60077739 0 0
+Stephen Pickett CE 06954846 1 0
+Taylor Anthony CE 02325270 0 0
+Farah Hilton CC 06135332 1 1
+Freja Alexander CE 55836153 0 0
+Mccauley Welsh CE 41625346 0 0
+Lily-Mai Mack CE 11794143 1 1
+Jadene Whyte CC 62065982 0 1
+Junaid Hobbs CC 10068135 1 1
+Maddie Alexander CE 76592838 0 1
+Amiyah Brandt CC 61276527 0 0
+Mccauley Joseph CE 39674982 0 0
+Jamelia Howarth CE 07029945 1 0
+Olly Bates CC 92270522 1 1
+Nyla Colley CE 82519414 1 1
+Keri Walmsley CC 99067758 1 1
+Tahmid Howarth CE 30975070 0 1
+Taylor Faulkner CE 87300202 1 0
+##ENFERMERO##
+Rishi Colley CC 85099931 1
+Amiyah Flynn CE 94841023 1
+Adeline Hoffman CC 02297771 1
+Devan Dyer CC 01042233 0
+Stephen Dodson CE 01237661 1
+Nida Ferry CC 35171801 1
+Mallory Johnston CC 62279636 1
+Henri Barlow CC 84741455 0
+Omari Deacon CE 82502723 1
+Kwabena Matthams CC 82301983 0
+Amanah Reeves CE 75790848 0
+Owain Hoffman CC 67041328 1
+Antony Sinclair CE 30777515 1
+Sarah-Jayne Hobbs CC 72561540 0
+Danyal Escobar CE 26827935 0
+Jamelia Mcculloch CC 00891161 0
+Christiana Ramos CE 83008698 1
+Arnold Barrett CC 08189520 1
+Dianne Bates CC 36121421 0
+Olly Dyer CC 95220787 1
+##HABITACION##
+1 2 4
+2 2 4
+3 3 6
+4 3 6
+5 3 6
+6 4 8
+7 2 4
+8 2 4
+9 3 6
+10 4 8
+11 4 8
+12 2 4
+13 0 0
+14 0 0
+15 0 0
+16 1 2
+17 4 8
+18 3 6
+19 3 6
+20 1 2
+21 2 4
+22 1 2
+23 3 6
+24 0 0
+25 4 8
+26 2 4
+27 3 6
+28 3 6
+29 0 0
+30 1 2
+31 3 6
+32 1 2
+33 3 6
+34 4 8
+35 2 4
+36 0 0
+37 1 2
+38 2 4
+39 3 6
+40 2 4
+41 2 4
+42 0 0
+43 0 0
+44 4 8
+45 0 0
+46 4 8
+47 3 6
+48 3 6
+49 0 0
+50 1 2
