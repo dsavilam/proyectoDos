@@ -6,7 +6,7 @@ import java.util.List;
 
 public class CasoEmergencia {
     private Long id;
-    private static Long idAux;
+    private static Long idAux = 1L;
     private String direccion;
     private LocalDate fecha;
     private String descripcion;

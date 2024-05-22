@@ -356,6 +356,11 @@ public class SEmergencias {
             }
         }
     }
+
+    public static void main(String[] args) {
+        SEmergencias sistemaEmergencias = new SEmergencias();
+        sistemaEmergencias.mostrarMenu();
+    }
 }
 
 

@@ -2,7 +2,7 @@ package Negocio.Clases;
 
 public class TipoIdentificacion {
     private Long id;
-    private static Long idAux;
+    private static Long idAux = 1L;
     private String codigo;
     private String nombre;
 

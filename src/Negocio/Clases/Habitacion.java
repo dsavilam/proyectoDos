@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Habitacion {
     private Long id;
-    private static Long idAux;
+    private static Long idAux = 1L;
     private String numero;
     private int capacidad;
     private float area;

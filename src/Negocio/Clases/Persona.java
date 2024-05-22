@@ -2,7 +2,7 @@ package Negocio.Clases;
 
 public abstract class Persona {
     protected Long id;
-    protected static Long idAux;
+    protected static Long idAux = 1L;
     protected String nombre;
     protected String apellido;
     protected String noIdentificacion;

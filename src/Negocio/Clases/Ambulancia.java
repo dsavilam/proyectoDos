@@ -2,7 +2,7 @@ package Negocio.Clases;
 
 public class Ambulancia {
     private Long id;
-    private static Long idAux;
+    private static Long idAux = 1L;
     private String placa;
     private int capacidad;
     private float areaPaciente;
