@@ -92,7 +92,6 @@ public class SEmergencias {
         impCasoEmergencia.agregarCasoEmergencia(casoEmergencia);
 
         for (Paciente paciente : pacientes) {
-            // Registro de los pacientes en el sistema
             pacientesGenerales.add(paciente);
         }
 

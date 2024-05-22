@@ -11,5 +11,6 @@ public interface InterfazDoctor {
     List<Doctor> filtrarDoctoresPorEspecialidad(String especialidad);
     void guardarDatosDoctor();
     void cargarDatosDoctor();
+    Doctor obtenerDoctorPorId(long idDoctorCasoMedico);
 }
 

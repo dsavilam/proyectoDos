@@ -10,4 +10,5 @@ public interface InterfazAmbulancia {
     void modificarAmbulancia(Ambulancia ambulancia);
     void guardarDatosAmbulancia();
     void cargarDatosAmbulancia();
+    Ambulancia obtenerAmbulanciaPorId(long idAmbulancia);
 }

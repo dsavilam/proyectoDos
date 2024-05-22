@@ -11,4 +11,5 @@ public interface InterfazParamedico {
     void modificarParamedico(Paramedico paramedico);
     void guardarDatosParamedico();
     void cargarDatosParamedico();
+    Paramedico obtenerParamedicoPorId(long idParamedico);
 }

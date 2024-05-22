@@ -47,4 +47,14 @@ public class ImpAmbulancia implements InterfazAmbulancia {
     public void cargarDatosAmbulancia() {
         ambulancias = (List<Ambulancia>) Persistencia.cargarDatos("ambulancias.dat");
     }
+
+    @Override
+    public Ambulancia obtenerAmbulanciaPorId(long idAmbulancia) {
+        for (Ambulancia ambulancia : ambulancias) {
+            if (ambulancia.getId() == idAmbulancia) {
+                return ambulancia;
+            }
+        }
+        return null; //Si no encuentra ni mierda
+    }
 }

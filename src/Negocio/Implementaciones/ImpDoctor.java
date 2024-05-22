@@ -58,4 +58,14 @@ public class ImpDoctor implements InterfazDoctor {
     public void cargarDatosDoctor() {
         doctores = (List<Doctor>) Persistencia.cargarDatos("doctores.dat");
     }
+
+    @Override
+    public Doctor obtenerDoctorPorId(long idDoctorCasoMedico) {
+        for (Doctor doctor : doctores) {
+            if (doctor.getId() == idDoctorCasoMedico) {
+                return doctor;
+            }
+        }
+        return null; //Retorna null si no encuentra ni meirdaa
+    }
 }

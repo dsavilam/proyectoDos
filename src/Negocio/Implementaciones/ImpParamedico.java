@@ -1,5 +1,6 @@
 package Negocio.Implementaciones;
 
+import Negocio.Clases.Ambulancia;
 import Negocio.Clases.Paramedico;
 import Negocio.Datos.Persistencia;
 import Negocio.Interfaces.InterfazParamedico;
@@ -47,6 +48,15 @@ public class ImpParamedico implements InterfazParamedico {
     @Override
     public void cargarDatosParamedico() {
         paramedicos = (List<Paramedico>) Persistencia.cargarDatos("paramedicos.dat");
+    }
+
+    public Paramedico obtenerParamedicoPorId(long idParamedico) {
+        for (Paramedico paramedico : paramedicos) {
+            if (paramedico.getId() == idParamedico) {
+                return paramedico;
+            }
+        }
+        return null; //Si no encuentra ni mierda
     }
 
 }
