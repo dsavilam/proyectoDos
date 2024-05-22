@@ -198,9 +198,10 @@ public class SEmergencias {
 
             switch (opcion) {
                 case 0:
-                    System.out.println("Ingresa el nombre del archivo de texto");
+                    System.out.println("Ingresa la ruta archivo de texto");
                     String nombreArchivo = scanner.nextLine();
                     cargarDatosDesdeArchivo(nombreArchivo);
+                    break;
                 case 1:
                     // Implementar agregar doctor
                     System.out.println("Ingrese el nombre del doctor:");
