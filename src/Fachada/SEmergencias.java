@@ -85,8 +85,8 @@ public class SEmergencias {
         impCasoEmergencia.modificarCasoEmergencia(casoEmergencia);
     }
 
-    public void registrarCasoEmergencia(String direccion, String descripcion, LocalDate fecha, List<Paramedico> paramedicos, Ambulancia ambulancia, List<Paciente> pacientes) {
-        CasoEmergencia casoEmergencia = new CasoEmergencia(direccion, descripcion, fecha, ambulancia);
+    public void registrarCasoEmergencia(String direccion, LocalDate fecha, String descripcion, List<Paramedico> paramedicos, Ambulancia ambulancia, List<Paciente> pacientes) {
+        CasoEmergencia casoEmergencia = new CasoEmergencia(direccion, fecha, descripcion, ambulancia);
         casoEmergencia.setParamedicos(paramedicos);
         casoEmergencia.setAmbulancia(ambulancia);
         impCasoEmergencia.agregarCasoEmergencia(casoEmergencia);
@@ -302,11 +302,13 @@ public class SEmergencias {
                         String noIdentificacionPaciente = scanner.nextLine();
                         System.out.println("Ingrese el tipo de identificación del paciente:");
                         String tipoIdentificacionPacienteStr = scanner.nextLine();
+                        System.out.println("Ingrese el sintoma del paciente: ");
+                        String sintomaPaciente = scanner.nextLine();
                         TipoIdentificacion tipoIdentificacionPaciente = new TipoIdentificacion(tipoIdentificacionPacienteStr, "Descripción del tipo"); // Simple implementación
-                        Paciente paciente = new Paciente(nombrePaciente, apellidoPaciente, noIdentificacionPaciente, tipoIdentificacionPaciente);
+                        Paciente paciente = new Paciente(nombrePaciente, apellidoPaciente, noIdentificacionPaciente, tipoIdentificacionPaciente, sintomaPaciente);
                         pacientes.add(paciente);
                     }
-                    registrarCasoEmergencia(direccion, descripcion, fecha, paramedicos, ambulancia, pacientes);
+                    registrarCasoEmergencia(direccion, fecha, descripcion, paramedicos, ambulancia, pacientes);
                     System.out.println("Caso de emergencia registrado exitosamente.");
                     break;
                 case 7:
@@ -324,8 +326,10 @@ public class SEmergencias {
                         String noIdentificacionPaciente = scanner.nextLine();
                         System.out.println("Ingrese el tipo de identificación del paciente:");
                         String tipoIdentificacionPacienteStr = scanner.nextLine();
+                        System.out.println("Ingrese el sintoma del paciente:");
+                        String sintomaPaciente = scanner.nextLine();
                         TipoIdentificacion tipoIdentificacionPaciente = new TipoIdentificacion(tipoIdentificacionPacienteStr, "Descripción del tipo"); // Simple implementación
-                        Paciente paciente = new Paciente(nombrePaciente, apellidoPaciente, noIdentificacionPaciente, tipoIdentificacionPaciente);
+                        Paciente paciente = new Paciente(nombrePaciente, apellidoPaciente, noIdentificacionPaciente, tipoIdentificacionPaciente, sintomaPaciente);
                         pacientesCasoMedico.add(paciente);
                     }
                     System.out.println("Ingrese el ID del doctor que se encargará del caso médico:");
@@ -346,7 +350,7 @@ public class SEmergencias {
                     System.out.println("Datos cargados exitosamente.");
                     break;
                 case 10:
-                    System.out.println("Saliendo del sistema...");
+                    System.out.println("Chaooooooooo locaaaaaaaaaaaa");
                     return;
                 default:
                     System.out.println("Opción no válida. Intente nuevamente.");
