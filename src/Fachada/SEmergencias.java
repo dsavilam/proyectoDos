@@ -86,7 +86,7 @@ public class SEmergencias {
     }
 
     public void registrarCasoEmergencia(String direccion, String descripcion, LocalDate fecha, List<Paramedico> paramedicos, Ambulancia ambulancia, List<Paciente> pacientes) {
-        CasoEmergencia casoEmergencia = new CasoEmergencia(direccion, descripcion, fecha);
+        CasoEmergencia casoEmergencia = new CasoEmergencia(direccion, descripcion, fecha, ambulancia);
         casoEmergencia.setParamedicos(paramedicos);
         casoEmergencia.setAmbulancia(ambulancia);
         impCasoEmergencia.agregarCasoEmergencia(casoEmergencia);
@@ -126,11 +126,11 @@ public class SEmergencias {
         CasoMedico casoMedico = new CasoMedico(LocalDate.now(), "Descripción del caso", doctor, pacientes);
         impCasoMedico.agregarCasoMedico(casoMedico);
 
-        // Asignar habitaciones disponibles a los pacientes
+        //Asignar habitaciones disponibles a los pacientes
         for (Paciente paciente : pacientes) {
             if (!habitacionesDisponibles.isEmpty()) {
                 Habitacion habitacion = habitacionesDisponibles.remove(0);  // Asignar la primera habitación disponible
-                paciente.setHabitacion(habitacion);  // Asignar la habitación al paciente
+                paciente.setHabitacion(habitacion);  //Asignar la habitación al paciente
             } else {
                 System.out.println("No hay habitaciones disponibles para el paciente " + paciente.getNombre());
             }
@@ -177,10 +177,12 @@ public class SEmergencias {
         impAmbulancia.cargarDatosAmbulancia();
     }
 
+    // Método para el menú interactivo
     public void mostrarMenu() {
         Scanner scanner = new Scanner(System.in);
         while (true) {
             System.out.println("Seleccione una opción:");
+            System.out.println("0. Cargar de archivo txt");
             System.out.println("1. Agregar Doctor");
             System.out.println("2. Eliminar Doctor");
             System.out.println("3. Listar Doctores");
@@ -193,9 +195,13 @@ public class SEmergencias {
             System.out.println("10. Salir");
 
             int opcion = scanner.nextInt();
-            scanner.nextLine();
+            scanner.nextLine();  // Consume newline
 
             switch (opcion) {
+                case 0:
+                    System.out.println("Ingresa el nombre del archivo de texto");
+                    String nombreArchivo = scanner.nextLine();
+                    cargarDatosDesdeArchivo(nombreArchivo);
                 case 1:
                     // Implementar agregar doctor
                     System.out.println("Ingrese el nombre del doctor:");
@@ -282,7 +288,7 @@ public class SEmergencias {
                     System.out.println("Ingrese el ID de la ambulancia que se usará:");
                     long idAmbulancia = scanner.nextLong();
                     scanner.nextLine();  // Consume newline
-                    Ambulancia ambulancia = ambulancia.getId();
+                    Ambulancia ambulancia = impAmbulancia.obtenerAmbulanciaPorId(idAmbulancia);
                     List<Paciente> pacientes = new ArrayList<>();
                     System.out.println("Ingrese el número de pacientes a registrar:");
                     int numPacientes = scanner.nextInt();
@@ -319,15 +325,13 @@ public class SEmergencias {
                         System.out.println("Ingrese el tipo de identificación del paciente:");
                         String tipoIdentificacionPacienteStr = scanner.nextLine();
                         TipoIdentificacion tipoIdentificacionPaciente = new TipoIdentificacion(tipoIdentificacionPacienteStr, "Descripción del tipo"); // Simple implementación
-                        String sintomas = scanner.nextLine();
-                        Paciente paciente = new Paciente(nombrePaciente, apellidoPaciente, noIdentificacionPaciente, tipoIdentificacionPaciente, sintomas);
+                        Paciente paciente = new Paciente(nombrePaciente, apellidoPaciente, noIdentificacionPaciente, tipoIdentificacionPaciente);
                         pacientesCasoMedico.add(paciente);
                     }
                     System.out.println("Ingrese el ID del doctor que se encargará del caso médico:");
                     long idDoctorCasoMedico = scanner.nextLong();
                     scanner.nextLine();  // Consume newline
-                    long idDoctorCasoMedico = idDoctorCasoMedico;
-                    Doctor doctorCasoMedico = Doctor.getIdAux() (idDoctorCasoMedico1);
+                    Doctor doctorCasoMedico = impDoctor.obtenerDoctorPorId(idDoctorCasoMedico);
                     registrarCasoMedico(pacientesCasoMedico, doctorCasoMedico);
                     System.out.println("Caso médico registrado exitosamente.");
                     break;
