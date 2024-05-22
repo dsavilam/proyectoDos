@@ -110,7 +110,7 @@ public class LectorDatos {
         InterfazHabitacion impHabitacion = new ImpHabitacion();
         while ((linea = br.readLine()) != null && !linea.startsWith("##") && !linea.isEmpty()) {
             String[] datos = linea.split(" ");
-            Habitacion habitacion = new Habitacion(Integer.parseInt(datos[0]), Integer.parseInt(datos[1]), Integer.parseInt(datos[2]));
+            Habitacion habitacion = new Habitacion(datos[0], Integer.parseInt(datos[1]), Float.parseFloat(datos[2]));
             habitacion.setId(Habitacion.getIdAux());
             impHabitacion.agregarHabitacion(habitacion);
         }
