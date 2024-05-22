@@ -12,15 +12,15 @@ import java.util.List;
 import java.util.Scanner;
 
 public class SEmergencias {
-    private InterfazDoctor impDoctor;
-    private InterfazCasoEmergencia impCasoEmergencia;
-    private InterfazCasoMedico impCasoMedico;
-    private InterfazAmbulancia impAmbulancia;
+    private final InterfazDoctor impDoctor;
+    private final InterfazCasoEmergencia impCasoEmergencia;
+    private final InterfazCasoMedico impCasoMedico;
+    private final InterfazAmbulancia impAmbulancia;
     private InterfazTipoIdentificacion impTipoIdentificacion;
-    private InterfazParamedico impParamedico;
+    private final InterfazParamedico impParamedico;
     private InterfazEnfermero impEnfermero;
-    private List<Paciente> pacientesGenerales;  // Lista general de pacientes
-    private List<Habitacion> habitacionesDisponibles;  // Lista general de habitaciones disponibles
+    private final List<Paciente> pacientesGenerales;
+    private final List<Habitacion> habitacionesDisponibles;
 
     public SEmergencias() {
         this.impDoctor = new ImpDoctor();
