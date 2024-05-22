@@ -361,6 +361,7 @@ public class SEmergencias {
         SEmergencias sistemaEmergencias = new SEmergencias();
         sistemaEmergencias.mostrarMenu();
     }
+    //Acabamos lol
 }
 
 
